@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
         aa = new TaskArrayAdapter(MainActivity.this, R.layout.row, taskArrayList) ;
         lvTask.setAdapter(aa);
-        registerForContextMenu(lvTask);
 
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override

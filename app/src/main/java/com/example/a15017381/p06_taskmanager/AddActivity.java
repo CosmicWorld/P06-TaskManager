@@ -67,8 +67,8 @@ public class AddActivity extends AppCompatActivity {
                 am.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(),
                         pendingIntent);
 
-                Intent returnIntent = new Intent();
-                setResult(RESULT_OK,returnIntent);
+                Intent i = new Intent();
+                setResult(RESULT_OK, i);
                 finish();
             }
         });
@@ -76,8 +76,8 @@ public class AddActivity extends AppCompatActivity {
         buttonCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent returnIntent = new Intent();
-                setResult(RESULT_OK,returnIntent);
+                Intent i = new Intent();
+                setResult(RESULT_OK, i);
                 finish();
             }
         });
